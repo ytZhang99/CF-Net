@@ -1,4 +1,4 @@
-# CF-Net
+# CF-Net : Deep Coupled Feedback Network for Joint Exposure Fusion and Super-Resolution
 This is the official repository of the paper "Deep Coupled Feedback Network for Joint Exposure Fusion and Image Super-Resolution" from **TIP 2021**.
 
 ## 1. Environment
