@@ -1,5 +1,5 @@
 # CF-Net : Deep Coupled Feedback Network for Joint Exposure Fusion and Super-Resolution
-This is the official repository of the paper "Deep Coupled Feedback Network for Joint Exposure Fusion and Image Super-Resolution" from **IEEE Transactions on Image Processing 2021**.[Paper Link](https://ieeexplore.ieee.org/abstract/document/9357931, "Paper Link")
+This is the official repository of the paper "Deep Coupled Feedback Network for Joint Exposure Fusion and Image Super-Resolution" from **IEEE Transactions on Image Processing 2021**. [[Paper Link]](https://ieeexplore.ieee.org/abstract/document/9357931, "Paper Link")
 
 ## 1. Environment
 - Python >= 3.5
