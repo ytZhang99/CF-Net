@@ -21,7 +21,7 @@ The training data and testing data is from the [[SICE dataset]](https://github.c
     ```
     python main.py --test_only
     ```
-4. Finally, you can find the Super-resolved and Fusion results in `./test_results`.
+4. Finally, you can find the Super-resolved and Fused results in `./test_results`.
 
 ## 4. Training
 For some reason, we haven't released the training code.
