@@ -1,5 +1,5 @@
 # CF-Net : Deep Coupled Feedback Network for Joint Exposure Fusion and Super-Resolution
-This is the official repository of the paper "Deep Coupled Feedback Network for Joint Exposure Fusion and Image Super-Resolution" from **IEEE Transactions on Image Processing 2021**. [[Paper Link]](https://ieeexplore.ieee.org/abstract/document/9357931, "Paper Link")
+This is the official repository of the paper "Deep Coupled Feedback Network for Joint Exposure Fusion and Image Super-Resolution" from **IEEE Transactions on Image Processing 2021**. [[Paper Link]](https://ieeexplore.ieee.org/abstract/document/9357931, "Paper Link")[[PDF Link]](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9357931)
 
 ## 1. Environment
 - Python >= 3.5
@@ -17,9 +17,10 @@ The training data and testing data is from the [[SICE dataset]](https://github.c
     git clone https://github.com/ytZhang99/CF-Net.git
     ```
 2. Place the low-resolution over-exposed images and under-exposed images in `dataset/test_data/lr_over` and `dataset/test_data/lr_under`, respectively.
-3. Run the following command for 4 times SR and exposure fusion:
+3. Run the following command for 2 or 4 times SR and exposure fusion:
     ```
-    python main.py --test_only
+    python main.py --test_only --scale 2 --model model_x2.pth
+    python main.py --test_only --scale 4 --model model_x4.pth
     ```
 4. Finally, you can find the Super-resolved and Fused results in `./test_results`.
 

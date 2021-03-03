@@ -24,7 +24,7 @@ class Test:
         self.num_imgs = len(self.over_imgs)
 
         self.model = CFNet().cuda()
-        self.state = torch.load(args.trained_model)
+        self.state = torch.load(args.model_path + args.model)
         self.model.load_state_dict(self.state['model'])
 
         self.test_time = []

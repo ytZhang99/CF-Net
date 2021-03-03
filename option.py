@@ -14,8 +14,10 @@ parser.add_argument('--dir_train', type=str, default='dataset/train_data/',
                     help='training dataset directory')
 parser.add_argument('--dir_test', type=str, default='dataset/test_data/',
                     help='test dataset directory')
-parser.add_argument('--trained_model', type=str, default='model/model_x4.pth',
+parser.add_argument('--model_path', type=str, default='model/',
                     help='trained model directory')
+parser.add_argument('--model', type=str, default='model_x4.pth',
+                    help='model name')
 parser.add_argument('--ext', type=str, default='.png',
                     help='extension of image files')
 parser.add_argument('--scale', type=int, default=4,
