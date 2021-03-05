@@ -9,12 +9,9 @@ scale = 2;
 USE_AUG = true;
 
 % SET data dir
-sourcedir = 'dataset/HR_over';
+sourcedir = 'dataset/train_data/HR_over';
 % sourcedir = 'dataset/HR_under';
-savedir = 'dataset';
-
-% saveHRpath = fullfile(savedir, 'garbage', ['x' num2str(scale)]);
-% saveLRpath = fullfile(savedir, 'LR_over', ['x' num2str(scale)]);
+savedir = 'dataset/train_data';
 
 saveHRpath = fullfile(savedir, 'discarded_images');
 saveLRpath = fullfile(savedir, 'LR_over');
