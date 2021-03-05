@@ -9,13 +9,13 @@ scale = 2;
 USE_AUG = true;
 
 % SET data dir
-sourcedir = 'dataset/train_data/HR_over';
-% sourcedir = 'dataset/HR_under';
+sourcedir = 'dataset/train_data/hr_over';
+% sourcedir = 'dataset/hr_under';
 savedir = 'dataset/train_data';
 
 saveHRpath = fullfile(savedir, 'discarded_images');
-saveLRpath = fullfile(savedir, 'LR_over');
-% saveLRpath = fullfile(savedir, 'LR_under');
+saveLRpath = fullfile(savedir, 'lr_over');
+% saveLRpath = fullfile(savedir, 'lr_under');
 
 if ~exist(saveHRpath, 'dir') 
     mkdir(saveHRpath);
