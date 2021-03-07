@@ -239,10 +239,11 @@ class CFB(nn.Module):
 
 # ------build CFNet ------ #
 class CFNet(nn.Module):
-    def __init__(self, in_channels=3, out_channels=3, num_features=64, num_steps=2, num_groups=6, upscale_factor=4,
-                 act_type='prelu',
+    def __init__(self, in_channels=args.in_channels, out_channels=args.out_channels, num_features=args.num_features,
+                 num_steps=args.num_steps, upscale_factor=args.scale,
+                 act_type=args.act_type,
                  norm_type=None,
-                 num_cfbs=3):
+                 num_cfbs=args.num_cfbs):
         super(CFNet, self).__init__()
 
         if upscale_factor == 2:

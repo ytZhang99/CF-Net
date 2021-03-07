@@ -38,6 +38,7 @@ parser.add_argument('--num_groups', type=int, default=6,
                     help='number of projection groups in SRB and CFB')
 parser.add_argument('--num_cfbs', type=int, default=3,
                     help='number of CFBs in CF_Net')
+parser.add_argument('--num_steps', type=int, default=2)
 parser.add_argument('--act_type', type=str, default='prelu',
                     help='type of activation function')
 
