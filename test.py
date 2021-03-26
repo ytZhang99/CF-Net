@@ -32,10 +32,10 @@ class Test:
     def test(self):
         self.model.eval()
         with torch.no_grad():
-            for idx in trange(1, 1 + self.num_imgs):
-                img1 = cv2.imread(self.over_imgs[idx])
+            for idx in trange(self.num_imgs):
+                img1 = cv2.imread(self.test_dir_pre + 'lr_over/' + self.over_imgs[idx])
                 img1 = torch.unsqueeze(self.transform(img1), 0)
-                img2 = cv2.imread(self.under_imgs[idx])
+                img2 = cv2.imread(self.test_dir_pre + 'lr_under/' + self.under_imgs[idx])
                 img2 = torch.unsqueeze(self.transform(img2), 0)
 
                 assert img1.shape == img2.shape
