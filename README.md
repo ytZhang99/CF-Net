@@ -3,6 +3,8 @@
 - We have conducted a live streaming on Jishi Platform, the Powerpoint file can be downloaded from [[PPT Link]](https://kdocs.cn/l/coxDwl57PbVi
 ).
 
+![framework](./imgs/framework.png)
+
 ## 1. Environment
 - Python >= 3.5
 - PyTorch >= 0.4.1 is recommended
