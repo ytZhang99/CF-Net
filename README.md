@@ -1,4 +1,4 @@
-# CF-Net : Deep Coupled Feedback Network for Joint Exposure Fusion and Super-Resolution
+# CF-Net : Deep Coupled Feedback Network for Joint Exposure Fusion and Image Super-Resolution
 - This is the official repository of the paper "Deep Coupled Feedback Network for Joint Exposure Fusion and Image Super-Resolution" from **IEEE Transactions on Image Processing 2021**. [[Paper Link]](https://ieeexplore.ieee.org/abstract/document/9357931, "Paper Link")[[PDF Link]](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9357931)
 - We have conducted a live streaming on Extreme Mart Platform, the Powerpoint file can be downloaded from [[PPT Link]](https://kdocs.cn/l/coxDwl57PbVi
 ).
