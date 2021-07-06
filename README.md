@@ -22,6 +22,12 @@ The training data and testing data is from the [[SICE dataset]](https://github.c
     git clone https://github.com/ytZhang99/CF-Net.git
     ```
 2. Place the low-resolution over-exposed images and under-exposed images in `dataset/test_data/lr_over` and `dataset/test_data/lr_under`, respectively.
+    ```
+    dataset 
+    └── test_data
+        ├── lr_over
+        └── lr_under
+    ```
 3. Run the following command for 2 or 4 times SR and exposure fusion:
     ```
     python main.py --test_only --scale 2 --model model_x2.pth
