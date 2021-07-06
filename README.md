@@ -41,9 +41,9 @@ The training data and testing data is from the [[SICE dataset]](https://github.c
     ```
     dataset 
     ├── train_data
-        ├── hr
-        ├── hr_over
-        └── hr_under
+    |   ├── hr
+    |   ├── hr_over
+    |   └── hr_under
     └── val_data
         ├── gt
         ├── lr_over
