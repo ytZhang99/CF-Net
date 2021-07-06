@@ -9,6 +9,7 @@
 - Python >= 3.5
 - PyTorch >= 0.4.1 is recommended
 - opencv-python
+- pytorch-msssim
 - tqdm
 - Matlab
 
@@ -29,9 +30,48 @@ The training data and testing data is from the [[SICE dataset]](https://github.c
 4. Finally, you can find the Super-resolved and Fused results in `./test_results`.
 
 ## 4. Training
-For some reason, we haven't released the training code.
-
-If you want to get access to the training code, you can email `yutongzhang@buaa.edu.cn` for the training methods and materials. 
+### Preparing training and validation data
+1. Place HR_groundtruth, HR_over_exposed, HR_under_exposed images for training in the following directory, respectively. (Optional) Validation data can also be placed in `dataset/val_data`. 
+    ```
+    dataset 
+    ├── train_data
+        ├── hr
+        ├── hr_over
+        └── hr_under
+    └── val_data
+        ├── gt
+        ├── lr_over
+        └── lr_under
+    ```                
+2. Open `Prepare_Data_HR_LR.m` file and modify the following lines according to your training commands.
+    ```
+    Line 5 or 6 : scale = 2 or 4
+    Line 9 : whether use off-line data augmentation (default = True)
+    [Line 12 <-> Line 17] or [Line 13 <-> Line 18] : producing [lr_over/lr_under] images from [hr_over/hr_under] images
+    ```
+3. After the above operations, `dataset/train_data` should be as follows:
+    ```
+    dataset
+    └── train_data 
+        ├── hr
+        ├── hr_over
+        ├── hr_under
+        ├── lr_over
+        └── lr_under
+    ```
+### Training
+1. Place the attached files `dataset.py` and `train.py` in the same directory with `main.py`.
+2. Run the following command to train the network for scale=2 or 4 according to the training data.
+    ```
+    python main.py --scale 2 --model my_model
+    python main.py --scale 4 --model my_model
+    ```
+    If validation data is added, run the following command to get the best model `best_ep.pth`.
+    ```
+    python main.py --scale 2 --model my_model -v
+    python main.py --scale 4 --model my_model -v
+    ```
+3. The trained model are placed in the directory `./model/`.
 
 ## 5. Citation
 If you find our work useful in your research or publication, please cite our work:
@@ -43,3 +83,6 @@ If you find our work useful in your research or publication, please cite our wor
   year={2021}
 }
 ```
+
+## 6. Contact
+If you have any question about our work or code, please email `yutongzhang@buaa.edu.cn` .

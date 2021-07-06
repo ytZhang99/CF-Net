@@ -6,12 +6,16 @@ parser.add_argument('--debug', action='store_true', help='Enables debug mode')
 
 parser.add_argument('--seed', type=int, default=1,
                     help='random seed')
+parser.add_argument('--validation', '-v', action='store_true',
+                    help='set this option to validate after training')
 parser.add_argument('--test_only', action='store_true',
                     help='set this option to test the model')
 
 # Data specifications
 parser.add_argument('--dir_train', type=str, default='dataset/train_data/',
                     help='training dataset directory')
+parser.add_argument('--dir_val', type=str, default='dataset/val_data/',
+                    help='validation dataset directory')
 parser.add_argument('--dir_test', type=str, default='dataset/test_data/',
                     help='test dataset directory')
 parser.add_argument('--model_path', type=str, default='model/',
@@ -22,6 +26,8 @@ parser.add_argument('--ext', type=str, default='.png',
                     help='extension of image files')
 parser.add_argument('--scale', type=int, default=4,
                     help='super resolution scale')
+parser.add_argument('--batch_size', type=int, default=4,
+                    help='number of batches each time')
 parser.add_argument('--patch_size', type=int, default=64,
                     help='input patch size')
 parser.add_argument('--save_dir', type=str, default='test_results',
@@ -46,4 +52,3 @@ parser.add_argument('--eval', action='store_true',
                     help='evaluate the test results')
 
 args = parser.parse_args()
-print(args)
