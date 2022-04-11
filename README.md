@@ -14,7 +14,7 @@
 - Matlab
 
 ## 2. Dataset
-The training data and testing data is from the [[SICE dataset]](https://github.com/csjcai/SICE, "Official SICE"). Or you can download the datasets from our [[Google Drive Link]](https://drive.google.com/drive/folders/1Ik0D2pf93aLOlexevpAE5ftckMTQscZo?usp=sharing., "Ours").
+The training data and testing data is from the [[SICE dataset]](https://github.com/csjcai/SICE). Or you can download the datasets from our [[Google Drive Link]](https://drive.google.com/drive/folders/1Ik0D2pf93aLOlexevpAE5ftckMTQscZo?usp=sharing., "Ours").
 
 ## 3. Test
 1. Clone this repository:
